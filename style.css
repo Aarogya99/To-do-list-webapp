@@ -1,3 +1,15 @@
+:root {
+    --bg-color: #0f172a;
+    --surface: #1e293b;
+    --border: #334155;
+    --text-main: #f8fafc;
+    --text-muted: #94a3b8;
+    --primary: #6366f1;
+    --primary-hover: #4f46e5;
+    --success: #10b981;
+    --danger: #ef4444;
+}
+
 body {
     background-color: var(--bg-color);
     color: var(--text-main);
@@ -5,6 +17,7 @@ body {
     justify-content: center;
     padding: 3rem 1rem;
     min-height: 100vh;
+    font-family: 'Inter', sans-serif;
 }
 
 .container {
@@ -30,11 +43,17 @@ h1 {
 .add-form {
     display: flex;
     gap: 1rem;
-    margin-bottom: 2.5rem;
+    align-items: flex-start;
 }
 
-.add-form input[type="text"] {
+.add-form-group {
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.add-form-group input[type="text"] {
     background: var(--bg-color);
     border: 1px solid var(--border);
     padding: 1rem;
@@ -44,7 +63,7 @@ h1 {
     transition: all 0.3s ease;
 }
 
-.add-form input[type="text"]:focus {
+.add-form-group input[type="text"]:focus {
     outline: none;
     border-color: var(--primary);
     box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
@@ -187,4 +206,118 @@ h1 {
     flex-direction: column;
     align-items: center;
     gap: 1rem;
+}
+
+/* New feature styles */
+.filters-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 1rem;
+}
+
+.filters {
+    display: flex;
+    gap: 1rem;
+}
+
+.filters a {
+    color: var(--text-muted);
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    padding: 0.4rem 0.8rem;
+    border-radius: 6px;
+}
+
+.filters a:hover, .filters a.active {
+    color: var(--text-main);
+    background: var(--border);
+}
+
+.btn-clear {
+    background: transparent;
+    border: none;
+    color: var(--text-muted);
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    text-decoration: underline;
+}
+
+.btn-clear:hover {
+    color: var(--danger);
+}
+
+.task-details {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+}
+
+.task-desc {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    margin: 0;
+}
+
+.task-desc.completed {
+    text-decoration: line-through;
+    opacity: 0.7;
+}
+
+/* Edit form styles */
+.edit-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-group label {
+    font-weight: 500;
+    font-size: 0.95rem;
+    color: var(--text-muted);
+}
+
+.form-group input, .form-group textarea {
+    background: var(--bg-color);
+    border: 1px solid var(--border);
+    padding: 1rem;
+    border-radius: 8px;
+    color: var(--text-main);
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    resize: vertical;
+}
+
+.form-group input:focus, .form-group textarea:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
+}
+
+.form-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+    margin-top: 1rem;
+}
+
+.btn-secondary {
+    background: var(--border);
+    color: var(--text-main);
+    text-decoration: none;
+}
+
+.btn-secondary:hover {
+    background: var(--text-muted);
+    color: var(--bg-color);
 }

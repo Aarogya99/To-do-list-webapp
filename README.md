@@ -57,7 +57,7 @@ To run this application locally, you will need:
 4. **Launch Application:**
    Open your browser and navigate to:
    ```
-   http://localhost/To-do-list-webapp/
+   http://localhost/To-do-list-webapp
    ```
 
 ## 🤝 Contributing

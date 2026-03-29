@@ -2,7 +2,7 @@
 
 A professional, responsive, and sleek To-Do List web application built using PHP, MySQL, and Vanilla CSS. Features a modern dark/light mode UI with glassmorphism effects, drag-and-drop reordering, dashboards, data persistence, and full CRUD operations.
 
-![Demo](https://github.com/Aarogya99/To-do-list-webapp/assets/placeholder.gif) *Replace with actual screenshot/gif*
+![Demo](https://github.com/Aarogya99/To-do-list-webapp/assets/placeholder.gif)
 
 ## ✨ Features
 

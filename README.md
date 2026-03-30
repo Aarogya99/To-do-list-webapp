@@ -1,4 +1,4 @@
-# Professional To-Do List Web Application
+# To-Do List Web Application
 
 A professional, responsive, and sleek To-Do List web application built using PHP, MySQL, and Vanilla CSS. Features a modern dark/light mode UI with glassmorphism effects, drag-and-drop reordering, dashboards, data persistence, and full CRUD operations.
 
